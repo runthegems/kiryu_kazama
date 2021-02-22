@@ -8,18 +8,37 @@ body {
 i[lang="jpn"] {
     font-family: "Noto Sans JP", sans-serif;
 }
+
 nav {
     background-color: darkred;
 }
 
-:first-line {
-    text-indent: 20px;
+body {
+    margin: 10px;
+    padding: 10px;
 }
+
 body a {
     color: slateblue;
 }
+
 nav > a {
     color: whitesmoke;
     font-size: 1.5em;
     text-decoration: none;
+    padding: 20px;
+}
+
+figure {
+    display: inline-block;
+    padding: .5em;
+}
+
+figcaption {
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+footer {
+    border-top: 4px solid #212529;
 }
