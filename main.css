@@ -1,6 +1,26 @@
+/* 
+CSS File for the Kazuma Kiryu page by Lauren LeBlanc
+A project for the Aquent Gymnasium course Modern Web Design
+Visit github.com/runthegems/runthegems.github.io for the full code!*/
+
+ /* Media Query Controls */
+@-ms-viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+@-o-viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+
 html {
     background-color:snow;
 }
+
 body {
     font-family: "Open Sans", Arial, sans-serif;
 }
@@ -10,35 +30,87 @@ i[lang="jpn"] {
 }
 
 nav {
-    background-color: darkred;
+    background-color: darkred;  
 }
 
-body {
-    margin: 10px;
-    padding: 10px;
+h1 {
+    font-size: 1.5em;
+    text-align: center;
 }
 
-body a {
+main, section {
+    margin: 15px;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+ main a, section a {
     color: slateblue;
+    transition: color .3s linear;
 }
 
-nav > a {
+ a:hover,
+ a:focus,
+ a:active {
+    color: darkred;
+}
+
+
+.navlink {
     color: whitesmoke;
     font-size: 1.5em;
     text-decoration: none;
     padding: 20px;
 }
 
-figure {
+
+figure, image {
     display: inline-block;
-    padding: .5em;
+    padding: 10px;
+    border: 2px solid blue;
+    height: auto;
+    max-width: 100%;
+    
+}
+
+figure[id*="yakuza"], #ishin {
+    position: relative;
+    object-fit: contain;
+    object-position: center;
+    left: 30%;
+
 }
 
 figcaption {
     text-align: center;
     padding: 5px 0 0 0;
+    font-size: 1.5em;
 }
 
 footer {
     border-top: 4px solid #212529;
+    font-size: .85em;
+    margin: 10px;
+}
+
+.hero {
+position: relative;
+}
+
+#kiryu1 {
+left: 10%;
+}
+
+#kiryu2 {
+top: 20px;
+left: 25%;
+}
+
+#kiryu3 {
+filter: brightness(1.5);
+left: 5%;
+}
+
+#kiryu4 {
+filter: brightness(.85);
 }
