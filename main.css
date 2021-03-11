@@ -16,7 +16,8 @@ Visit github.com/runthegems/runthegems.github.io for the full code!*/
     width: device-width;
     zoom: 1.0;
   }
-
+  
+/*Default*/
 html {
     background-color:snow;
 }
@@ -30,17 +31,19 @@ i[lang="jpn"] {
 }
 
 nav {
-    background-color: darkred;  
+    background-color: darkred;
+    max-width: 100%;   
 }
 
-h1 {
-    font-size: 1.5em;
-    text-align: center;
+header {
+    font-family: "Edo SZ", Arial, sans-serif;
+    font-size: 2em;
+    margin-bottom: .15em;
 }
 
 main, section {
-    margin: 15px;
-    padding: 15px;
+    margin-top: 0;
+    margin-bottom: 1.5em;
     line-height: 1.5;
 }
 
@@ -58,59 +61,49 @@ main, section {
 
 .navlink {
     color: whitesmoke;
-    font-size: 1.5em;
+    font-size: 2em;
+    line-height: 2.5em;
     text-decoration: none;
-    padding: 20px;
+    padding: 1em;
 }
 
-
 figure, image {
-    display: inline-block;
-    padding: 10px;
     border: 2px solid blue;
     height: auto;
     max-width: 100%;
-    
 }
-
-figure[id*="yakuza"], #ishin {
-    position: relative;
-    object-fit: contain;
-    object-position: center;
-    left: 30%;
-
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 figcaption {
     text-align: center;
-    padding: 5px 0 0 0;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 footer {
     border-top: 4px solid #212529;
     font-size: .85em;
-    margin: 10px;
 }
 
-.hero {
-position: relative;
+/*Layout*/
+header,
+nav,
+main,
+section, 
+footer {
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-#kiryu1 {
-left: 10%;
-}
 
-#kiryu2 {
-top: 20px;
-left: 25%;
-}
-
-#kiryu3 {
-filter: brightness(1.5);
-left: 5%;
-}
-
-#kiryu4 {
-filter: brightness(.85);
-}
+/*>=1200*/
+@media only screen and (min-width:75em) {}
+/* 1200-690*/
+@media only screen and (min-width: 43.125em) and (max-width: 75em) {}
+/* <=690*/
+@media only screen and (max-width: 43.125em) {}
